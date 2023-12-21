@@ -1,0 +1,23 @@
+﻿<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+@*//<h2 class="text-warning">@TempData["success"]</h2>
+    //<h2 class="text-warning">@TempData["update"]</h2>
+    //<h2 class="text-warning">@TempData["delete"]</h2>*@
+@if (TempData["success"] != null)
+{
+    <script type="text/javascript">
+        toastr.success('@TempData["success"]');
+    </script>
+}
+@if (TempData["update"] != null)
+{
+    <script type="text/javascript">
+        toastr.success('@TempData["update"]');
+    </script>
+}
+@if (TempData["delete"] != null)
+{
+    <script type="text/javascript">
+        toastr.success('@TempData["delete"]');
+    </script>
+}
